@@ -13,11 +13,11 @@ export const TodoWrapper = () => {
     }
     return (
         <div className='TodoWrapper'>
-            <TodoForm addTodo={addTodo}/>
+            <h1>Dejte se do práce!</h1>
+            <TodoForm addTodo={addTodo} />
             {todos.map((todo, index) => (
-                <Todo task={todo} key={index}/>
+                <Todo task={todo} key={index} />
             ))}
-            <Todo />
         </div>
     )
 }
