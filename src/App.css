@@ -8,7 +8,7 @@
 }
 
 body {
-  background: #8758ff;
+  background: #251946;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,7 +28,8 @@ h1 {
   background: #1A1A40;
   margin-top: 5rem;
   padding: 2rem;
-  border-radius: 5px;
+  border: 3px solid #8758ff;
+  border-radius: 25px;
 }
 
 .TodoForm {
