@@ -12,12 +12,6 @@ The Todo app is a web-based application that allows users to create, update, and
 
 This project was built using React, a popular JavaScript library for building user interfaces. The app uses React Hooks, which are a set of functions that allow developers to use state and other React features without writing a class. The app also uses the uuidv4 library to generate unique IDs for the tasks.
 
-## 4. A brief description of how it works internally
-
-The Todo app is built using React, which allows developers to create reusable components. The app is divided into several components, including `TodoWrapper`, `Todo`, `TodoForm`, and `EditTodoForm`. The `TodoWrapper` component is the main component that contains the state and logic of the app. The component renders the `TodoForm` component for adding new tasks and maps over the existing tasks to render the `Todo` component for each task. The `Todo` component renders the task, and the `EditTodoForm` component allows users to edit a task.
-
-The app uses React Hooks to manage state and the `useState hook` to update state. When a user adds a new task, the app generates a unique ID using the `uuidv4` library and adds the task to the list of existing tasks. When a user toggles the completion status of a task, the app updates the task's completed property. When a user edits a task, the app toggles the `isEditing` property of the task and displays the `EditTodoForm` component. Finally, when a user deletes a task, the app removes the task from the list of existing tasks.
-
 ## 4. A detailed description of how it works internally
 
 The `TodoWrapper` component is the main component that renders the application. It contains the state for the list of todos and provides functions to add, delete, toggle complete and edit tasks.
