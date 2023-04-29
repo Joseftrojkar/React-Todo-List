@@ -14,3 +14,5 @@ If you wan't to try out the app for yourself, just go to
 7. Click the task to toggle its completion status.
 8. Click the pencil icon to edit a task. Edit the task and click the "Add Task" button to update the task.
 9. Click the trash icon to delete a task.
+
+### For detailed documentation, go to documentation.md
