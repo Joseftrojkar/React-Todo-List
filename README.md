@@ -1,7 +1,7 @@
 # Welcome to the TheTodoList project page!
 
-If you wan't to try out the app for yourself, just go to
-### http://todolist.web9.cz
+### If you wan't to try out the app for yourself, just go to
+## http://todolist.web9.cz
 
 ### Also check out the [presentation](https://github.com/Joseftrojkar/React-Todo-List/blob/main/the%20future%20of%20tasks.pdf) (download recommended)
 
