@@ -12,11 +12,25 @@ The Todo app is a web-based application that allows users to create, update, and
 
 This project was built using React, a popular JavaScript library for building user interfaces. The app uses React Hooks, which are a set of functions that allow developers to use state and other React features without writing a class. The app also uses the uuidv4 library to generate unique IDs for the tasks.
 
-## 4. A description of how it works internally
+## 4. A brief description of how it works internally
 
-The Todo app is built using React, which allows developers to create reusable components. The app is divided into several components, including TodoWrapper, Todo, TodoForm, and EditTodoForm. The TodoWrapper component is the main component that contains the state and logic of the app. The component renders the TodoForm component for adding new tasks and maps over the existing tasks to render the Todo component for each task. The Todo component renders the task, and the EditTodoForm component allows users to edit a task.
+The Todo app is built using React, which allows developers to create reusable components. The app is divided into several components, including `TodoWrapper`, `Todo`, `TodoForm`, and `EditTodoForm`. The `TodoWrapper` component is the main component that contains the state and logic of the app. The component renders the `TodoForm` component for adding new tasks and maps over the existing tasks to render the `Todo` component for each task. The `Todo` component renders the task, and the `EditTodoForm` component allows users to edit a task.
 
-The app uses React Hooks to manage state and the useState hook to update state. When a user adds a new task, the app generates a unique ID using the uuidv4 library and adds the task to the list of existing tasks. When a user toggles the completion status of a task, the app updates the task's completed property. When a user edits a task, the app toggles the isEditing property of the task and displays the EditTodoForm component. Finally, when a user deletes a task, the app removes the task from the list of existing tasks.
+The app uses React Hooks to manage state and the `useState hook` to update state. When a user adds a new task, the app generates a unique ID using the `uuidv4` library and adds the task to the list of existing tasks. When a user toggles the completion status of a task, the app updates the task's completed property. When a user edits a task, the app toggles the `isEditing` property of the task and displays the `EditTodoForm` component. Finally, when a user deletes a task, the app removes the task from the list of existing tasks.
+
+## 4. A detailed description of how it works internally
+
+The `TodoWrapper` component is the main component that renders the application. It contains the state for the list of todos and provides functions to add, delete, toggle complete and edit tasks.
+
+When a user enters a new task in the `TodoForm` component, it triggers the `addTodo` function which creates a new todo object with a unique ID generated using `uuidv4` and the task description entered by the user. The `completed` and `isEditing` properties of the todo object are set to `false` by default. The new todo is added to the list of todos by setting the state using `setTodos` and passing in the new list of todos that includes the newly added todo.
+
+When the user clicks on the checkbox beside a task, it triggers the `toggleComplete` function which maps over the list of todos and toggles the `completed` property of the todo object with the given ID. The new list of todos is set as the state using `setTodos`.
+
+When the user clicks on the delete button beside a task, it triggers the `deleteTodo` function which filters the list of todos to exclude the todo object with the given ID. The new list of todos is set as the state using `setTodos`.
+
+When the user clicks on the edit button beside a task, it triggers the `editTodo` function which maps over the list of todos and toggles the `isEditing` property of the todo object with the given ID. This switches the view from the `Todo` component to the `EditTodoForm` component, which allows the user to edit the task description. Once the user submits the updated task description, the `editTask` function is called, which maps over the list of todos and updates the task property of the todo object with the given ID. The new list of todos is set as the state using `setTodos`.
+
+The `TodoWrapperLocalStorage` component works similarly to the `TodoWrapper` component, but it also includes `localStorage` functionality to store the list of todos in the user's browser. When the component mounts, it retrieves the list of todos from `localStorage` and sets it as the initial state. Whenever the list of todos is updated, it is also saved to `localStorage` using `JSON.stringify`.
 
 ## 5. Instructions on how to use the project
 
