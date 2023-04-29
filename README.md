@@ -6,6 +6,7 @@
 ### Also check out the [presentation](https://github.com/Joseftrojkar/React-Todo-List/blob/main/the%20future%20of%20tasks.pdf) (download recommended)
 
 ## If you wan't to run this project on your computer, follow these steps
+note: you need to have [node.js](https://nodejs.org/en/download) downloaded
 
 1. Clone the project repository from GitHub.
 2. Open a terminal and navigate to the project directory.
