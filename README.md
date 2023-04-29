@@ -1,4 +1,4 @@
-# Welcome to the TodoList project page!
+# Welcome to the TheTodoList project page!
 
 If you wan't to try out the app for yourself, just go to
 ### http://todolist.web9.cz
