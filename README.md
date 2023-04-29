@@ -15,4 +15,4 @@ If you wan't to try out the app for yourself, just go to
 8. Click the pencil icon to edit a task. Edit the task and click the "Add Task" button to update the task.
 9. Click the trash icon to delete a task.
 
-### If you wan't to know more, check out the [documentation](https://link-url-here.org)
+### If you wan't to know more, check out the [documentation](https://github.com/Joseftrojkar/React-Todo-List/blob/main/Documentation.md)
